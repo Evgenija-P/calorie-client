@@ -19,7 +19,6 @@ axios.defaults.baseURL = "http://localhost:8080/api";
 export const fetchProducts = createAsyncThunk("products/fetchAll", async (_, thunkAPI) => {
   try {
     const response = await axios.get("/products");
-    console.log(response.data);
     return response.data;
   } catch (e) {
     return thunkAPI.rejectWithValue(e.message);

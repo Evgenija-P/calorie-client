@@ -12,7 +12,7 @@ const Home = () => {
   }, [dispatch]);
 
   if (products) {
-    console.log(products);
+    // console.log(products);
   }
 
   return (
